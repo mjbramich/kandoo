@@ -6,7 +6,7 @@
         "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\" ",
         "lint": "eslint . --ext .js,.jsx",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json,html}' --config ./.prettierrc",
-        "build": "pwd && cd client && npm run build",
+        "build": "pwd && cd client && pwd && npm run build",
         "start": "cd server && npm run start",
         "postinstall": "pwd && cd client && pwd && npm ci && cd ../server && npm ci && pwd"
     },
